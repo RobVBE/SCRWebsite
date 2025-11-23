@@ -57,6 +57,155 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Header Section
+--------------------------------------------------------------*/
+/*-- General --*/
+#header {
+  width: 100%;
+  height: 10vh;
+  transition: all 0.5s;
+  z-index: 4;
+  margin: 10px 0;
+  /*background: rgba(78, 200, 237, 0.9);*/
+  justify-content: center;
+  background: transparent;
+}
+
+/* General: Default Classes */
+#header img {
+  display: block;
+}
+
+/*-- General: Grid Layout Classes--*/
+#header .container {
+  max-width: 80%;
+  margin: 0;
+  height: 100%;
+}
+
+#header .container.container-transparant{
+  background: transparent;
+}
+
+#header .container.container--scrolled {
+  background: rgba(221, 29, 71, 0.9);
+  border-radius: 15px;
+}
+
+/*-- General: Custom Layout Classes --*/
+#header .logo {
+  visibility: hidden;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 7vh;
+}
+
+#header .offcanvas{
+  background-image: url("../img/Background.jpg");
+  height: 100%;
+}
+
+#header .offcanvas-header {
+  background: rgba(255,255,255,.07);
+  /*background: rgba(255,255,255,0.7);*/
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  border: 2px solid rgba(255,255,255);
+  margin: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
+  height: 10vh;
+}
+
+#header .offcanvas-body {
+  text-align: center;
+  background: rgba(255,255,255,.07);
+  /*background: rgba(255,255,255,0.7);*/
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  border: 2px solid rgba(255,255,255);
+  margin: 10px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+#header .offcanvas-body li a {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: clamp(25px, 7vw, 40px);
+  line-height: 1.0; 
+}
+
+#header .dropdown-menu li a {
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0.03em;
+  font-size: clamp(25px, 7vw, 40px);
+  line-height: 1.0; 
+}
+
+@media (min-width: 992px) {
+  #header .logo img {
+    max-height: 9vh;
+  }
+
+  #header .offcanvas{
+    background-image: none;
+  }
+
+  #header .offcanvas-header {
+    background: none;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: none;
+    border-radius: 0px;
+    border: none;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    height: 100%;
+  }
+
+  #header .offcanvas-body {
+    text-align: none;
+    background: none;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: none;
+    border-radius: 0px;
+    border: none;
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  #header .offcanvas-body li a {
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.03em;
+    font-size: clamp(25px, 1.6rem, 35px);
+    line-height: 1.0; 
+    text-transform: uppercase;
+  }
+
+  #header .dropdown-menu li a {
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0.03em;
+    font-size: clamp(25px, 1.6rem, 35px);
+    line-height: 1.0; 
+    text-transform: uppercase;
+  }
+
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 

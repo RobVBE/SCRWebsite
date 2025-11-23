@@ -29,7 +29,55 @@
                 <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFTLNNF2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
             </noscript>
         End Google Tag Manager (noscript) -->
-
+        <header id="header" class="d-flex fixed-top">
+            <div class="container container-transparant">
+                <div class="row h-100">
+                    <div class="col-4 d-flex justify-content-start align-items-center">
+                        <a href="index.html" class="logo"><img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-8 d-flex justify-content-end align-items-center">
+                        <nav id="navbar" class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainnavbar" aria-controls="offcanvas" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-top" tabindex="-1" id="mainnavbar" aria-labelledby="offcanvasLabel">
+                                <div class="offcanvas-header">
+                                    <a href="index.html" class="logo"><img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid"></a>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
         <section id="hero" >
             <!-- Background image (Layer 1) -->
             <img class="background" src="assets/img/Background.jpg" alt="">
@@ -101,7 +149,40 @@
                 </div>
             </div>
         </section> 
+
+        <main id="main">
+            <!-- ======= Counts Section ======= -->
+            <section id="counts" class="counts section-bg">
+            <div class="container">
+                <div class="row counters">
+                <div class="col-lg-4 col-6 text-center">
+                    <i class='bx bx-run'></i>
+                    <p>Lopers in 2024.</p>
+                    <span data-purecounter-start="0" data-purecounter-end="1548" data-purecounter-duration="1" class="purecounter"></span>
+                </div>
+                <div class="col-lg-4 col-6 text-center">
+                    <i class='bx bxs-right-top-arrow-circle'></i>
+                    <p>Afstanden.</p>
+                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                </div>
+                <!--<div class="col-lg-3 col-6 text-center">
+                    <i class='bx bx-beer'></i>
+                    <p>Bevoorradingen onderweg op de 10 & 16Km.</p>
+                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+                </div>-->
+                <div class="col-lg-4 col-12 text-center">
+                    <i class='bx bxs-hand'></i>
+                    <p>Helpende handen.</p>
+                    <span data-purecounter-start="0" data-purecounter-end="47" data-purecounter-duration="1" class="purecounter"></span>
+                </div>
+                </div>
+            </div>
+            </section>
+        </main>
         
+        <!-- Template Main JS File -->
+            <script src="assets/js/main.js"></script>   
+
         <!--JS Script to create transparant tag letter if filled tag-->
         <script>
             (function() {
