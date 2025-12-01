@@ -42,11 +42,10 @@
                             </button>
                             <div class="offcanvas offcanvas-top" tabindex="-1" id="mainnavbar" aria-labelledby="offcanvasLabel">
                                 <div class="offcanvas-header">
-                                    <a href="index.html" class="logo"><img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid"></a>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"aria-label="Close"></button>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <ul class="navbar-nav mb-2 mb-lg-0">
                                         <li class="nav-item">
                                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                                         </li>
@@ -72,6 +71,9 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="offcanvas-footer d-flex justify-content-center align-items-center">
+                                    <img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid">
+                                </div>
                             </div>
                         </nav>
                     </div>
@@ -81,26 +83,13 @@
         <section id="hero" >
             <!-- Background image (Layer 1) -->
             <img class="background" src="assets/img/Background.jpg" alt="">
-            <!-- Logo image (Layer 2) -->
+            <!-- Logo image (Layer 2) 
             <div class="logo-overlay d-flex">
                 <img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid img-logo">
-            </div>
+            </div> -->
             <!-- Content (Layer 3) -->
-            <div class="container position-relative">
-                <div class="row row-logo">
-                    <div class="col-12 h-100 d-flex justify-content-center align-items-center">
-                        <img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid img-logo">
-                    </div>
-                </div>
-                <div class="row row-distance">
-                    <div class="col-12 h-100 col-lg-6 col-distance d-flex">
-                        <img src="assets/img/distances/Dist_KIDS_10x10.png" class="img-fluid img-distance" alt="">
-                        <img src="assets/img/distances/Dist_6K_10x10.png" class="img-fluid img-distance" alt="">
-                        <img src="assets/img/distances/Dist_10K_10x10.png" class="img-fluid img-distance" alt="">
-                        <img src="assets/img/distances/Dist_16K_10x10.png" class="img-fluid img-distance" alt="">
-                    </div>
-                </div>
-                <div class="row row-tag-line1">
+            <div class="container hero-mobile position-relative">
+                <div class="row row-tag-line1"> <!--height 15%-->
                     <div class="col-12 h-100 d-flex justify-content-center align-items-end">
                         <h1>
                             Are you
@@ -110,7 +99,7 @@
                         </h1>
                     </div>
                 </div>  
-                <div class="row row-tag-line2">
+                <div class="row row-tag-line2"> <!--height 5%-->
                     <div class="col-12 h-100 d-flex justify-content-center align-items-start">
                         <h1>
                             Come 
@@ -121,21 +110,34 @@
                         </h1>
                     </div>
                 </div> 
-                <div class="row row-savethedate">
+                <div class="row row-logo"> <!--height 25%-->
                     <div class="col-12 h-100 d-flex justify-content-center align-items-end">
-                        <h2 class="tag-nofill">Save the date</h2>
+                        <img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid img-logo">
                     </div>
                 </div>
-                <div class="row row-date">
-                    <div class="col-12 h-100 mt-2 d-flex justify-content-center align-items-start">
+                <div class="row row-date"> <!--height 10%-->
+                    <div class="col-12 h-100 mt-2 d-flex justify-content-center align-items-center">
                         <h2 class="tag-nofill">19.04.2026</h2>
                     </div>
                 </div>
-                <div class="row row-info">
+                <div class="row row-location"> <!--height 10%-->
+                    <div class="col-12 h-100 d-flex justify-content-center align-items-start">
+                        <h2 class="tag-nofill">Lommel, BE</h2>
+                    </div>
+                </div>
+                <div class="row row-distance"> <!--height 10%-->
+                    <div class="col-12 h-100 col-lg-6 col-distance d-flex">
+                        <img src="assets/img/distances/Dist_KIDS_10x10.png" class="img-fluid img-distance" alt="">
+                        <img src="assets/img/distances/Dist_6K_10x10.png" class="img-fluid img-distance" alt="">
+                        <img src="assets/img/distances/Dist_10K_10x10.png" class="img-fluid img-distance" alt="">
+                        <img src="assets/img/distances/Dist_16K_10x10.png" class="img-fluid img-distance" alt="">
+                    </div>
+                </div>
+                <div class="row row-info"> <!--height 25%-->
                     <div class="col-12 col-lg-6 h-lg-100 h-50 d-flex justify-content-center align-items-center">
                         <a href="https://www.saharacityrun.be/2025/" target="_blank" rel="noopener noreferrer">
                             <span class="tag-fill">
-                                <svg class="tag-fill-svg-h3" role="img" aria-label="Editie 2025" data-text="Editie 2025" data-weight="900" data-letter-spacing="1" data-font-size="30" data-xpad="5" data-ypad="5"></svg>
+                                <svg class="tag-fill-svg-h3" role="img" aria-label="Schrijf je nu in!" data-text="Schrijf je nu in!" data-weight="900" data-letter-spacing="1" data-font-size="30" data-xpad="10" data-ypad="10"></svg>
                             </span>
                         </a>
                     </div>
@@ -145,6 +147,76 @@
                             <a href="https://www.facebook.com/saharacityrun/" target="_blank" rel="noopener noreferrer" class="facebook"><i class='bx bxl-facebook-circle'></i></a>
                             <a href="https://www.instagram.com/saharacityrun/" target="_blank" rel="noopener noreferrer" class="instagram"><i class='bx bxl-instagram-alt' ></i></a>
                         </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container hero-desktop position-relative">
+                <div class="row h-100">
+                    <div class="col-6">
+                        <div class="row row-tag-line1"> <!--height 15%-->
+                            <div class="col-12 h-100 d-flex justify-content-center align-items-end">
+                                <h1>
+                                    Are you
+                                    <span class="tag-fill">
+                                        <svg class="tag-fill-svg-h1" role="img" aria-label="READY" data-text="READY" data-weight="900" data-letter-spacing="6" data-font-size="100" data-xpad="10" data-ypad="10"></svg>
+                                    </span>
+                                </h1>
+                            </div>
+                        </div>  
+                        <div class="row row-tag-line2"> <!--height 5%-->
+                            <div class="col-12 h-100 d-flex justify-content-center align-items-start">
+                                <h1>
+                                    Come 
+                                    <span class="tag-fill">
+                                        <svg class="tag-fill-svg-h1" role="img" aria-label="RUN" data-text="RUN" data-weight="900" data-letter-spacing="6" data-font-size="100" data-xpad="10" data-ypad="10"></svg>
+                                    </span>
+                                    with us
+                                </h1>
+                            </div>
+                        </div> 
+                        <div class="row row-distance"> <!--height 10%-->
+                            <div class="col-12 h-100 col-distance d-flex">
+                                <img src="assets/img/distances/Dist_KIDS_10x10.png" class="img-fluid img-distance" alt="">
+                                <img src="assets/img/distances/Dist_6K_10x10.png" class="img-fluid img-distance" alt="">
+                                <img src="assets/img/distances/Dist_10K_10x10.png" class="img-fluid img-distance" alt="">
+                                <img src="assets/img/distances/Dist_16K_10x10.png" class="img-fluid img-distance" alt="">
+                            </div>
+                        </div>
+                        <div class="row row-info"> <!--height 25%-->
+                            <div class="col-12 h-100 d-flex justify-content-center align-items-end">
+                                <a href="https://www.saharacityrun.be/2025/" target="_blank" rel="noopener noreferrer">
+                                    <span class="tag-fill">
+                                        <svg class="tag-fill-svg-h3" role="img" aria-label="Schrijf je nu in!" data-text="Schrijf je nu in!" data-weight="900" data-letter-spacing="1" data-font-size="30" data-xpad="10" data-ypad="10"></svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row row-social"> <!--height 25%-->
+                            <div class="col-12 h-100 d-flex justify-content-center align-items-start col-social">
+                                <h3>
+                                    Follow us: 
+                                    <a href="https://www.facebook.com/saharacityrun/" target="_blank" rel="noopener noreferrer" class="facebook"><i class='bx bxl-facebook-circle'></i></a>
+                                    <a href="https://www.instagram.com/saharacityrun/" target="_blank" rel="noopener noreferrer" class="instagram"><i class='bx bxl-instagram-alt' ></i></a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row row-logo">
+                            <div class="col-12 h-100 d-flex justify-content-center align-items-end">
+                                <img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid img-logo">
+                            </div>
+                        </div>
+                        <div class="row row-date">
+                            <div class="col-12 h-100 d-flex justify-content-center align-items-end">
+                                <h2 class="tag-nofill">19.04.2026</h2>
+                            </div>
+                        </div>
+                        <div class="row row-location"> <!--height 10%-->
+                            <div class="col-12 h-100 d-flex justify-content-center align-items-start">
+                                <h2 class="tag-nofill">Lommel, BE</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
