@@ -1,9 +1,21 @@
 /*--------------------------------------------------------------
-# General Classes
+# ::root variables
 --------------------------------------------------------------*/
+:root {
+  --scr-logo: 180ms;
+  --scr-background-texture-light: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  --scr-background-texture-dark: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  --scr-background-colour-darkbrown: #261E0F;
+  --scr-background-colour-white: #ffffff;
+  --scr-background-colour-green: #00564d;
+}
+
+/*--------------------------------------------------------------
+# Default HTML elements
+--------------------------------------------------------------*/
+
 body {
   font-family: "Poppins", sans-serif;
-  color: #fa0303;
   margin: 0;
 }
 
@@ -24,13 +36,6 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-}
-
-/*--------------------------------------------------------------
-# Sections General Styles
---------------------------------------------------------------*/
-section {
-  padding: 0px;
 }
 
 /*--------------------------------------------------------------
@@ -57,6 +62,13 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Sections General Styles
+--------------------------------------------------------------*/
+section {
+  padding: 0px;
+}
+
+/*--------------------------------------------------------------
 # Header Section
 --------------------------------------------------------------*/
 /*-- General --*/
@@ -66,7 +78,6 @@ section {
   transition: all 0.5s;
   z-index: 500;
   margin: 10px 0;
-  /*background: rgba(78, 200, 237, 0.9);*/
   justify-content: center;
   background: transparent;
 }
@@ -114,9 +125,8 @@ section {
 }
 
 #header .offcanvas{
-  /*background: url("../img/Background.jpg");*/
-  background-color: #261E0F;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-color: var(--scr-background-colour-darkbrown);
+  background-image: var(--scr-background-texture-light);
   margin: 5%;
   height: 90%;
 }
@@ -476,6 +486,31 @@ section {
   height: 60%;
 }
 
+#hero .button {
+  display: inline-flex;
+  padding: 0.5rem 2rem;
+  background: rgba(28,30,15,.8);
+  /*background: rgba(75,200,237,.08);*/
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  border-radius: 15px; /* pill shape */
+  position: relative;
+  border:5px solid rgba(255,255,255);
+  overflow: hidden;
+  width:max-content;
+  align-items:center; 
+  gap:.6rem;  
+  height: 50%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#hero .button:hover {
+  background: rgba(28,30,15,0.06);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
 #hero .img-distance {
   margin-right: 1%;
   margin-left: 1%;
@@ -507,5 +542,29 @@ section {
   #hero .tag-nofill {
     padding: 0.5rem 3rem;
     height: clamp(72px, 40%, 80px);
+  }
+
+  #hero .button {
+    display: inline-flex;
+    padding: 0.5rem 2rem;
+    background: rgba(28,30,15,0.06);
+    /*background: rgba(75,200,237,.08);*/
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-radius: 15px; /* pill shape */
+    position: relative;
+    border:5px solid rgba(255,255,255);
+    overflow: hidden;
+    width:max-content;
+    align-items:center; 
+    gap:.6rem; 
+    height: clamp(72px, 40%, 80px);
+    text-transform: uppercase;
+  }
+
+  #hero .button:hover {
+    background: rgba(28,30,15,1);
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
   }
 }
