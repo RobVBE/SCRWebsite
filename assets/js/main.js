@@ -58,10 +58,10 @@
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let header = select('#header')
+    let header = select('#nav')
     let offset = header.offsetHeight
 
-    if (!header.classList.contains('header-scrolled')) {
+    if (!header.classList.contains('nav-scrolled')) {
       offset -= 10
     }
 
@@ -75,23 +75,23 @@
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
-  let selectHeader = select('#header')
+  let selectHeader = select('#nav')
   if (selectHeader) {
-    const headerScrolled = () => {
+    const navScrolled = () => {
       if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
+        selectHeader.classList.add('nav-scrolled')
       } else {
-        selectHeader.classList.remove('header-scrolled')
+        selectHeader.classList.remove('nav-scrolled')
       }
     }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
+    window.addEventListener('load', navScrolled)
+    onscroll(document, navScrolled)
   }
 
   /**
    * Toggle .Logo-scrolled class to #Logo when page is scrolled
    */
-  let selectLogo = select('#Logo')
+  let selectLogo = select('#logo')
   if (selectLogo) {
     const LogoScrolled = () => {
       if (window.scrollY > 100) {
@@ -186,7 +186,7 @@
 
   /**
    * Testimonials slider
-   */
+   
   new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
@@ -211,11 +211,11 @@
         spaceBetween: 20
       }
     }
-  });
+  });*/
 
   /**
    * Porfolio isotope and filter
-   */
+   * 
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
@@ -240,27 +240,27 @@
       }, true);
     }
 
-  });
+  });*/
 
   /**
    * Initiate portfolio lightbox 
-   */
+   
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
-  });
+  });*/
 
   /**
    * Initiate portfolio details lightbox 
-   */
+ 
   const portfolioDetailsLightbox = GLightbox({
     selector: '.portfolio-details-lightbox',
     width: '90%',
     height: '90vh'
-  });
+  });*/
 
   /**
    * Portfolio details slider
-   */
+   
   new Swiper('.portfolio-details-slider', {
     speed: 400,
     loop: true,
@@ -273,11 +273,11 @@
       type: 'bullets',
       clickable: true
     }
-  });
+  });*/
 
   /**
    * Initiate Pure Counter 
-   */
-  new PureCounter();
+   
+  new PureCounter();*/
 
 })()

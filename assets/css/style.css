@@ -2,7 +2,6 @@
 # ::root variables
 --------------------------------------------------------------*/
 :root {
-  --scr-logo: 180ms;
   --scr-background-texture-light: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   --scr-background-texture-dark: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   --scr-background-colour-darkbrown: #261E0F;
@@ -46,6 +45,16 @@ h6 {
   100%    {opacity: 1;}
 }
 
+@keyframes key-navfadein {
+  0%      {background: rgba(69, 53, 28, 0);}
+  100%    {background: rgba(69, 53, 28, 0.9);}
+}
+
+@keyframes key-navlogofadein {
+  0%      {opacity: 0;}
+  100%    {opacity: 1;}
+}
+
 @keyframes key-background-lg {
   0%      { transform: scale(1.05); }
   100%    { transform: scale(1.15); }
@@ -58,7 +67,9 @@ h6 {
 
 /*-- Reduce Motion for accessability --*/
 @media (prefers-reduced-motion: reduce){
-  #hero .background { animation: none; transform: none;}
+  #hero .background {animation: none; transform: none;}
+  #header .logo-scrolled {animation: none; transform: none;}
+  #header .nav-scrolled {animation: none; transform: none;}
 }
 
 /*--------------------------------------------------------------
@@ -69,17 +80,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Header Section
+# Header
 --------------------------------------------------------------*/
 /*-- General --*/
 #header {
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   transition: all 0.5s;
   z-index: 500;
   margin: 10px 0;
   justify-content: center;
-  background: transparent;
 }
 
 /* General: Default Classes */
@@ -94,15 +104,6 @@ section {
   height: 100%;
 }
 
-#header .container.container-transparant{
-  background: transparent;
-}
-
-#header .container.container--scrolled {
-  background: rgba(221, 29, 71, 0.9);
-  border-radius: 15px;
-}
-
 /*-- General: Custom Layout Classes --*/
 #header .logo {
   visibility: hidden;
@@ -113,7 +114,33 @@ section {
 }
 
 #header .logo img {
+  padding-top: 5px;
   max-height: 7vh;
+}
+
+#header .button {
+  display: inline-flex;
+  padding: 0.5rem 2rem;
+  background: rgba(28,30,15,.8);
+  /*background: rgba(75,200,237,.08);*/
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  border-radius: 15px; /* pill shape */
+  position: relative;
+  border:5px solid rgba(255,255,255);
+  overflow: hidden;
+  width:max-content;
+  align-items:center; 
+  gap:.6rem;  
+  height: 50%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#header .button:hover {
+  background: rgba(28,30,15,0.06);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
 #header .navbar-toggler {
@@ -146,7 +173,7 @@ section {
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.03em;
-  font-size: clamp(25px, 7vw, 40px);
+  font-size: clamp(20px, 6vw, 40px);
   line-height: 1.0; 
 }
 
@@ -168,8 +195,51 @@ section {
 }
 
 @media (min-width: 992px) {
-  #header .logo img {
-    max-height: 9vh;
+  #header .nav-transparent {
+    background: transparent;
+  }
+
+  #header .nav-scrolled {
+    background: rgba(69, 53, 28, 0.9);
+    border-radius: 15px;
+    animation: key-navfadein 0.5s ease-in forwards;
+  }
+
+  #header .logo {
+    max-height: 7vh;
+    visibility: hidden;
+  }
+
+  #header .logo-scrolled {
+    max-height: 7vh;
+    visibility: visible;
+    opacity: 0;
+    animation: key-navlogofadein 0.5s ease-in forwards;
+  }
+
+  #header .button {
+    display: inline-flex;
+    padding: 0.5rem 2rem;
+    background: rgba(28,30,15,0.06);
+    /*background: rgba(75,200,237,.08);*/
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-radius: 15px; /* pill shape */
+    position: relative;
+    border:5px solid rgba(255,255,255);
+    overflow: hidden;
+    width:max-content;
+    align-items:center; 
+    gap:.6rem; 
+    height: clamp(40px, 10%, 50px);
+    text-transform: uppercase;
+  }
+
+  #header .button:hover {
+    background: rgba(28,30,15,1);
+    color: #ffffff !important;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
   }
 
   #header .offcanvas{
@@ -192,12 +262,16 @@ section {
   }
 
   #header .offcanvas-body li a {
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
     letter-spacing: 0.03em;
-    font-size: clamp(25px, 1.6rem, 35px);
+    font-size: 20px;
     line-height: 1.0; 
     text-transform: uppercase;
+  }
+
+  #header .offcanvas-body li a:hover {
+    color: var(--scr-background-colour-green);
   }
 
   #header .dropdown-menu li a {
@@ -415,7 +489,7 @@ section {
   }
 
   #hero .row-tag-line1 {
-    height: 30%;
+    height: 35%;
   }
 
   #hero .row-tag-line2 {
@@ -432,12 +506,12 @@ section {
   }
 
   #hero .row-logo {
-    height: 60%;
+    height: 65%;
     visibility: visible;
   }
   #hero .row-logo .img-logo  {
     visibility: visible;
-    max-height: 70%;
+    max-height: 60%;
   }
 
   #hero .col-distance,
@@ -567,4 +641,94 @@ section {
     -webkit-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
   }
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#main .section-white {
+  background: var(--scr-background-colour-white);
+  background-image: var(--scr-background-texture-dark);
+}
+
+#main .section-green {
+  background: var(--scr-background-colour-green);
+  background-image: var(--scr-background-texture-dark);
+}
+
+#main .section-brown {
+  background: var(--scr-background-colour-darkbrown);
+  background-image: var(--scr-background-texture-dark);
+}
+
+/*--------------------------------------------------------------
+# Countdown Section
+--------------------------------------------------------------*/
+
+/*-- General --*/
+#countdown {
+  width: 100%;
+  height: 15vh;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* General: Default Classes */
+
+/*-- General: Custom Layout Classes --*/
+#countdown .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 12px;
+    margin: 10px;
+    width: 75px;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+#countdown .countdown-number {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--scr-background-colour-darkbrown);
+    margin-bottom: 4px;
+}
+
+#countdown .countdown-label {
+    font-size: 0.7rem;
+    color: var(--scr-background-colour-darkbrown);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*-- General: Grid Layout Classes--*/
+#countdown .container {
+  max-width: 100%;
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+# faq Section
+--------------------------------------------------------------*/
+
+/*-- General --*/
+#faq {
+  width: 100%;
+  height: 15vh;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* General: Default Classes */
+
+/*-- General: Custom Layout Classes --*/
+
+/*-- General: Grid Layout Classes--*/
+#faq .container {
+  max-width: 100%;
+  margin: 0;
 }

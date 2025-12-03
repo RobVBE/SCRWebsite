@@ -30,10 +30,10 @@
             </noscript>
         End Google Tag Manager (noscript) -->
         <header id="header" class="d-flex fixed-top">
-            <div class="container container-transparant">
+            <div id="nav" class="nav-transparent container">
                 <div class="row h-100">
-                    <div class="col-4 d-flex justify-content-start align-items-center">
-                        <a href="index.html" class="logo"><img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid"></a>
+                    <div class="col-4 d-flex justify-content-start align-items-start">
+                        <a id="logo" href="index.html" class="logo"><img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid"></a>
                     </div>
                     <div class="col-8 d-flex justify-content-end align-items-center">
                         <nav id="navbar" class="navbar navbar-expand-lg">
@@ -47,16 +47,10 @@
                                 <div class="offcanvas-body">
                                     <ul class="navbar-nav mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Link</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                            <a class="nav-link active" aria-current="page" href="#"><i class='bx bxs-home'></i></a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Praktisch</a>
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <a class="dropdown-item" href="#">Action</a>
@@ -68,6 +62,27 @@
                                                     <a class="dropdown-item" href="#">Something else here</a>
                                                 </li>
                                             </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Foto's</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Partners</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">FAQ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Contact</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link button" href="https://www.godare.events/nl/events/natuurloopkalender/sahara-city-run-3/inschrijven" target="_blank" rel="noopener noreferrer">Schrijf je nu in!</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/saharacityrun/"><i class='bx bxl-facebook-circle'></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/saharacityrun/"><i class='bx bxl-instagram-alt'></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -135,7 +150,7 @@
                 </div>
                 <div class="row row-info">
                     <div class="col-12 col-lg-6 h-lg-100 h-50 d-flex justify-content-center align-items-end">
-                        <a href="https://www.saharacityrun.be/2025/" target="_blank" rel="noopener noreferrer" class="button"><h2>Schrijf je nu in!</h2></a>
+                        <a href=https://www.godare.events/nl/events/natuurloopkalender/sahara-city-run-3/inschrijven" target="_blank" rel="noopener noreferrer" class="button"><h2>Schrijf je nu in!</h2></a>
                     </div>
                      <!--height 25%-->
                     <!--<div class="col-12 col-lg-6 h-lg-100 h-50 d-flex justify-content-center align-items-center">
@@ -188,7 +203,7 @@
                         </div>
                         <div class="row row-info"> <!--height 25%-->
                             <div class="col-12 h-100 d-flex justify-content-center align-items-end">
-                                <a href="https://www.saharacityrun.be/2025/" target="_blank" rel="noopener noreferrer" class="button"><h2>Schrijf je nu in!</h2></a>
+                                <a href="https://www.godare.events/nl/events/natuurloopkalender/sahara-city-run-3/inschrijven" target="_blank" rel="noopener noreferrer" class="button"><h2>Schrijf je nu in!</h2></a>
                             </div>
                         </div>
                         <div class="row row-social"> <!--height 25%-->
@@ -223,38 +238,46 @@
         </section> 
 
         <main id="main">
-            <!-- ======= Counts Section ======= -->
-            <section id="counts" class="counts section-bg">
-            <div class="container">
-                <div class="row counters">
-                <div class="col-lg-4 col-6 text-center">
-                    <i class='bx bx-run'></i>
-                    <p>Lopers in 2024.</p>
-                    <span data-purecounter-start="0" data-purecounter-end="1548" data-purecounter-duration="1" class="purecounter"></span>
+            <!-- ======= Countdown Section ======= -->
+            <section id="countdown" class="about section-green">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12 h-100 d-flex justify-content-center align-items-center">
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="days">136</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="hours">20</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="minutes">03</span>
+                                <span class="countdown-label">Mins</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="seconds">15</span>
+                                <span class="countdown-label">Secs</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-6 text-center">
-                    <i class='bx bxs-right-top-arrow-circle'></i>
-                    <p>Afstanden.</p>
-                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+            </section>
+            <section id="faq" class="faq section-white">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-12 h-100 d-flex justify-content-center align-items-center">
+                            wsdfngjqhdfguqf
+                        </div>
+                    </div>
                 </div>
-                <!--<div class="col-lg-3 col-6 text-center">
-                    <i class='bx bx-beer'></i>
-                    <p>Bevoorradingen onderweg op de 10 & 16Km.</p>
-                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
-                </div>-->
-                <div class="col-lg-4 col-12 text-center">
-                    <i class='bx bxs-hand'></i>
-                    <p>Helpende handen.</p>
-                    <span data-purecounter-start="0" data-purecounter-end="47" data-purecounter-duration="1" class="purecounter"></span>
-                </div>
-                </div>
-            </div>
             </section>
         </main>
         
         <!-- Template Main JS File -->
-            <script src="assets/js/main.js"></script>
-            <script src="assets/js/text_punch.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/text_punch.js"></script>
+        <script src="assets/js/countdown.js"></script>
 
         <!-- Link Bootstrap CDN Templates-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
