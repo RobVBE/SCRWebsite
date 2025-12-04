@@ -5,8 +5,8 @@
   --scr-background-texture-light: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   --scr-background-texture-dark: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   --scr-background-colour-darkbrown: #261E0F;
-  --scr-background-colour-white: #ffffff;
-  --scr-background-colour-green: #00564d;
+  --scr-background-colour-white: #f4f5f8;
+  --scr-background-colour-green: #002622;
 }
 
 /*--------------------------------------------------------------
@@ -16,6 +16,7 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  background: var(--scr-background-colour-white);
 }
 
 a {
@@ -563,10 +564,10 @@ section {
 #hero .button {
   display: inline-flex;
   padding: 0.5rem 2rem;
-  background: rgba(28,30,15,.8);
+  background: rgba(28,30,15,0.06);
   /*background: rgba(75,200,237,.08);*/
-  -webkit-backdrop-filter: blur(0px);
-  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border-radius: 15px; /* pill shape */
   position: relative;
   border:5px solid rgba(255,255,255);
@@ -653,12 +654,43 @@ section {
 
 #main .section-green {
   background: var(--scr-background-colour-green);
-  background-image: var(--scr-background-texture-dark);
+  background-image: var(--scr-background-texture-light);
+  color: var(--scr-background-colour-white);
 }
 
 #main .section-brown {
   background: var(--scr-background-colour-darkbrown);
   background-image: var(--scr-background-texture-dark);
+}
+
+#main .section-title {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+#main .section-title h2::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: var(--scr-background-colour-white);
+  margin-bottom: 5px;
+  bottom: 0;
+}
+
+#main .section-title h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+}
+
+#main p {
+  font-size: 0.89rem;
+  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -717,18 +749,212 @@ section {
 /*-- General --*/
 #faq {
   width: 100%;
-  height: 15vh;
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  padding: 30px;
 }
 
 /* General: Default Classes */
 
 /*-- General: Custom Layout Classes --*/
+.faq .faq-list {
+  padding: 0 100px;
+}
+
+.faq .faq-list {
+  padding: 0 100px;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li+li {
+  margin-top: 15px;
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  background: #261E0F;
+  border-radius: 4px;
+  position: relative;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  color: rgba(250,175,8,1);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.89rem;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: rgba(250,175,8,255);
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+  color: #fff;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: rgba(250,175,8,255);
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}
 
 /*-- General: Grid Layout Classes--*/
 #faq .container {
   max-width: 100%;
   margin: 0;
 }
+
+/*--------------------------------------------------------------
+# footer Section
+--------------------------------------------------------------*/
+
+/*-- General --*/
+#footer {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* General: Default Classes */
+#footer p {
+  font-size: 0.89rem;
+  display: block;
+}
+
+#footer h2::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: var(--scr-background-colour-white);
+  margin-bottom: 5px;
+  bottom: 0;
+}
+
+#footer h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+}
+
+#footer h3 {
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  font-size: clamp(20px, 1.75rem, 30px);
+  line-height: 1.0; 
+}
+
+#footer h4 {
+  font-size: 0.95rem;
+  display: block;
+}
+
+#footer img {
+  border-radius: 15px;
+}
+
+/*-- General: Custom Layout Classes --*/
+#footer .img-logo {
+  max-width: clamp(100px, 15%, 250px);
+}
+
+#footer .img-logo-lommelrockt {
+  max-width: clamp(175px, 50%, 250px);
+  align-self: center;
+}
+
+#footer .button {
+  align-self: center;
+  display: inline-flex;
+  padding: 0.5rem 2rem;
+  background: rgba(28,30,15,0.06);
+  /*background: rgba(75,200,237,.08);*/
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 15px; /* pill shape */
+  position: relative;
+  border:5px solid rgba(255,255,255);
+  overflow: hidden;
+  width:max-content;
+  align-items:center; 
+  gap:.6rem; 
+  height: clamp(45px, 10%, 60px);
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+#footer .button:hover {
+  background: rgba(28,30,15,1);
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+}
+
+/*-- General: Grid Layout Classes--*/
+#footer .container {
+  background: var(--scr-background-colour-darkbrown);
+  color: var(--scr-background-colour-white);
+  max-width: 100%;
+  margin: 0;
+}
+
+#footer .col-12,
+#footer .col-lg-4 {
+  flex-direction: column;
+  padding: 30px;
+}
+
