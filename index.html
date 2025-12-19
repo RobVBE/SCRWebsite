@@ -12,6 +12,7 @@
         <!-- Link Bootstrap CDN Templates-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" rel="stylesheet"/>
 
         <!-- Favicons -->
         <link href="assets/img/Logo/Logo2024_960x960_FavIcon.png" rel="icon">
@@ -32,11 +33,11 @@
         <header id="header" class="d-flex fixed-top">
             <div id="nav" class="nav-transparent container">
                 <div class="row h-100">
-                    <div class="col-4 d-flex justify-content-start align-items-start">
+                    <div class="col-4 h-100 d-flex justify-content-start align-items-start">
                         <a id="logo" href="index.html" class="logo"><img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid"></a>
                     </div>
-                    <div class="col-8 d-flex justify-content-end align-items-center">
-                        <nav id="navbar" class="navbar navbar-expand-lg">
+                    <div class="col-8 h-100 d-flex justify-content-end align-items-start">
+                        <nav id="navbar" class="navbar navbar-expand-lg h-100">
                             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainnavbar" aria-controls="offcanvas" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -95,14 +96,11 @@
                 </div>
             </div>
         </header>
+
         <section id="hero" >
             <!-- Background image (Layer 1) -->
-            <img class="background" src="assets/img/Background.jpg" alt="">
-            <!-- Logo image (Layer 2) 
-            <div class="logo-overlay d-flex">
-                <img src="assets/img/Logo/Logo_2026_960x960.png" alt="" class="img-fluid img-logo">
-            </div> -->
-            <!-- Content (Layer 3) -->
+            <img class="background" src="assets/img/background/Background.jpg" alt="">
+            <!-- Content (Layer 2) -->
             <div class="container hero-mobile position-relative">
                 <div class="row row-tag-line1"> <!--height 15%-->
                     <div class="col-12 h-100 d-flex justify-content-center align-items-end">
@@ -150,16 +148,8 @@
                 </div>
                 <div class="row row-info">
                     <div class="col-12 col-lg-6 h-lg-100 h-50 d-flex justify-content-center align-items-end">
-                        <a href=https://www.godare.events/nl/events/natuurloopkalender/sahara-city-run-3/inschrijven" target="_blank" rel="noopener noreferrer" class="button"><h2>Schrijf je nu in!</h2></a>
+                        <a class="button" href="https://www.godare.events/nl/events/natuurloopkalender/sahara-city-run-3/inschrijven" target="_blank" rel="noopener noreferrer" class="button"><h2>Schrijf je nu in!</h2></a>
                     </div>
-                     <!--height 25%-->
-                    <!--<div class="col-12 col-lg-6 h-lg-100 h-50 d-flex justify-content-center align-items-center">
-                        <a href="https://www.saharacityrun.be/2025/" target="_blank" rel="noopener noreferrer">
-                            <span class="tag-fill">
-                                <svg class="tag-fill-svg-h3" role="img" aria-label="Schrijf je nu in!" data-text="Schrijf je nu in!" data-weight="900" data-letter-spacing="1" data-font-size="30" data-xpad="10" data-ypad="10" data-color="rgba(0,86,77,.92)"></svg>
-                            </span>
-                        </a>
-                    </div>-->
                     <div class="col-12 col-lg-6 h-lg-100 h-50 d-flex col-social">
                         <h3>
                             Follow us: 
@@ -203,7 +193,7 @@
                         </div>
                         <div class="row row-info"> <!--height 25%-->
                             <div class="col-12 h-100 d-flex justify-content-center align-items-end">
-                                <a class="button" href="https://www.godare.events/nl/events/natuurloopkalender/sahara-city-run-3/inschrijven" target="_blank" rel="noopener noreferrer"><h2>Schrijf je nu in!</h2></a>
+                                <a class="button" href="https://www.godare.events/nl/events/natuurloopkalender/sahara-city-run-3/inschrijven" target="_blank" rel="noopener noreferrer">Schrijf je nu in!</a>
                             </div>
                         </div>
                         <div class="row row-social"> <!--height 25%-->
@@ -238,156 +228,453 @@
         </section> 
 
         <main id="main">
-            <!-- ======= Countdown Section ======= -->
-            <section id="countdown" class="about section-green">
+            <!-- ======= Info Section ======= -->
+            <section id="info" class="section-white">
                 <div class="container h-100">
+                    <div class="row h-100"><h1>Are you ready?</h1></div>
                     <div class="row h-100">
-                        <div class="col-12 h-100 d-flex justify-content-center align-items-center">
-                            <div class="countdown-item">
-                                <span class="countdown-number" id="days">136</span>
-                                <span class="countdown-label">Days</span>
+                        <div class="col-12 col-lg-6 h-100 d-flex justify-content-start align-items-start">
+                            <div class="row h-100">
+                                <p>De 8de editie vindt plaats op Paasmaandag <b>21 april 2025</b>. Ook dit jaar heb je de keuze tussen verschillende afstanden. Je kan kiezen tussen <b>6, 10 of 16km.</b> Verder is er opnieuw een super toffe <b>KIDSRUN</b> voor kinderen tot 12 jaar waarbij de kleinsten kunnen kiezen tussen <b>400</b> of <b>800m.</b></p>
+                                <p>Loop mee met meer dan <b>1500</b> andere deelnemers en geniet onderweg van het bruisende <b>stadscentrum</b> of de wondermooie <b>natuur.</b> Minder sportief? Geen probleem! Supporter voor de lopers van op een van de <b>gezellige terrasjes</b> rond het Lommelse marktplein.</p>
+                                <p>Volg ons zeker ook op onze social media, zodat je op de hoogte blijft van het laaste nieuws.</p>
+                                <h2>Ben jij klaar voor een nieuwe editie van de Sahara City Run?</h2>
                             </div>
-                            <div class="countdown-item">
-                                <span class="countdown-number" id="hours">20</span>
-                                <span class="countdown-label">Hours</span>
+                            <div class="row h-100">
+                                <div class="col-12 h-100 d-row d-flex justify-content-center align-items-center">
+                                    <div class="countdown-item">
+                                        <span class="countdown-number" id="days">136</span>
+                                        <span class="countdown-label">Days</span>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span class="countdown-number" id="hours">20</span>
+                                        <span class="countdown-label">Hours</span>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span class="countdown-number" id="minutes">03</span>
+                                        <span class="countdown-label">Mins</span>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span class="countdown-number" id="seconds">15</span>
+                                        <span class="countdown-label">Secs</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="countdown-item">
-                                <span class="countdown-number" id="minutes">03</span>
-                                <span class="countdown-label">Mins</span>
+                        </div>
+                        <div class="col-12 col-lg-6 h-100 d-flex justify-content-center align-items-center">
+                            <img src="assets/img/pictures/Sfeer1.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======= End Info Section ======= -->
+            <!-- ======= sfeer Section ======= -->
+            <section id="sfeer" class="section-white">
+                <div class="slider-text"><h1>Come run with us.</h1></div>
+                <div class="swiper slider-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s1.jpg" class="img-fluid" alt="">
                             </div>
-                            <div class="countdown-item">
-                                <span class="countdown-number" id="seconds">15</span>
-                                <span class="countdown-label">Secs</span>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s3.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s4.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s5.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s6.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s7.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s8.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s9.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="slider-item">
+                                <img src="assets/img/pictures/slider/s10.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div><!-- End testimonial item -->
+                    </div>
+                    <!--<div class="swiper-pagination"></div>-->
+                </div>
+            </section>
+            <!-- ======= End sfeer Section ======= -->
+
+            <!-- ======= parcours Section ======= -->
+            <section id="parcours" class="section-white">
+                <div class="container h-100">
+                    <div class="row h-100 row-highlight-lightgreen">
+                        <div class="col-12 col-lg-7 h-100 d-flex justify-content-center align-items-center">
+                            <div class="container">
+                                <div class="row h-100">
+                                    <div class="col-12">
+                                        <h3>"Start in het stadscentrum van Lommel, loop via de centrumstraten naar de betoverende natuur van de Sahara, langs de uitkijtoren, over de Sahara City Run brug en via Lommel SK en de Kroon terug over de streep."</h3>
+                                    </div>
+                                </div>
+                                <div class="row h-100">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-6 col-lg-4 text-center">
+                                                <i class='bx bx-leaf' ></i>
+                                                <h2>Prachtige natuur</h2>
+                                                <p>Saharazand, naaldbossen, heide. Voor ieder wat wils!</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 text-center">
+                                                <i class='bx bx-building-house' ></i>
+                                                <h2>Doortocht in het Lommelse stadscentrum</h2>
+                                                <p>Start en finish in het centrum van Lommel. Geniet van de sfeer en loop recht door Café de Kroon, het oudste café van Lommel.</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 text-center">
+                                                <i class='bx bxs-castle' ></i>
+                                                <h2>Opvallend parcours</h2>
+                                                <p>Elk jaar een verrassing! Hou zeker onze socials en website in het oog.</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 text-center">
+                                                <i class='bx bx-laugh' ></i>
+                                                <h2>Fun, fun, fun, ...</h2>
+                                                <p>DJs, percussie en veel meer onderweg</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 text-center">
+                                                <i class='bx bx-water'></i>
+                                                <h2>Sahara City Run bridge</h2>
+                                                <p>Onze eigen brug over het water in de Sahara. Een absoluut hoogtepunt op het parcours! Met dank aan de scouts van Lommel.</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 text-center">
+                                                <i class='bx bx-male-female' ></i><i class='bx bx-child' ></i>
+                                                <h2>Een loop voor het ganse gezin</h2>
+                                                <p>Kinderen zijn welkom, zowel met KIDSRUN, als bij onze andere afstanden</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="row h-100">
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <a href="https://www.saharacityrun.be/#/" target="_blank" rel="noopener noreferrer" class="button">Alle praktische info<i class='bx bxs-right-arrow button-arrow'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 h-100 d-flex justify-content-center align-items-center">
+                            <div class="container distance-box-wrapper">
+                                <div class="row h-100 mb-3">
+                                    <div class="col-6 d-flex justify-content-center align-items-center distance-box-container gap-3">
+                                        <div class="distance-box-kids"></div>
+                                        <div class="distance-box-text">
+                                            <div class="tag-kidsrun">KIDSRUN</div>
+                                            <div class="text">
+                                                <p>Een toffe run voor de kleinste lopers. Je kan kiezen tussen 400 of 800m</p>
+                                                <p><b>Start: 13.00u</b></p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-6 d-flex justify-content-center align-items-center distance-box-container">
+                                        <div class="distance-box-6k"></div>
+                                        <div class="distance-box-text">
+                                            <div class="tag-6k">6K</div>
+                                            <div class="text">
+                                                <p>Een toffe run voor de kleinste lopers. Je kan kiezen tussen 400 of 800m</p>
+                                                <p><b>Start: 14.00u</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row h-100 mb-3">
+                                    <div class="col-6 d-flex justify-content-center align-items-center distance-box-container">
+                                        <div class="distance-box-10k"></div>
+                                        <div class="distance-box-text">
+                                            <div class="tag-10k">10K</div>
+                                            <div class="text">
+                                                <p>Een toffe run voor de kleinste lopers. Je kan kiezen tussen 400 of 800m</p>
+                                                <p><b>Start: 15.00u</b></p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-6 d-flex justify-content-center align-items-center distance-box-container">
+                                        <div class="distance-box-16k"></div>
+                                        <div class="distance-box-text">
+                                            <div class="tag-16k">16K</div>
+                                            <div class="text">
+                                                <p>Een toffe run voor de kleinste lopers. Je kan kiezen tussen 400 of 800m</p>
+                                                <p><b>Start: 15.15u</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="other" class="faq section-white">
+            <!-- ======= End parcours Section ======= -->
+
+            <!-- ======= partners Section ======= -->
+            <section id="partners" class="section-green">
                 <div class="container h-100">
                     <div class="row h-100">
-                        <div class="col-12 h-100 d-flex justify-content-center align-items-center">
-                            wsdfngjqhdfguqf
+                        <div class="col-12">
+                            <h1>Onze partners</h1>
+                        </div>
+                    </div>
+                    <div class="row h-100">
+                        <div class="col-12">
+                            <p>De Sahara City Run is natuurlijk niet mogelijk zonder onze trouwe partners.</p>
+                        </div>
+                    </div>
+                    <div class="row h-100">
+                        <div class="col-12">
+                            <div class="swiper">
+                                <div class="swiper-wrapper slider-wrapper">
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/A SPONSORS/A1-Nyrstar.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/A SPONSORS/A2-Ciner.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/A SPONSORS/A3-Derdaele.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/B SPONSORS/B1-Fermolux.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/B SPONSORS/B3-RedLion.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/B SPONSORS/B4-SchepersHendrickx.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/C SPONSORS/C1-Berkmans.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/C SPONSORS/C2-Werkkledij.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/C SPONSORS/C3-StadLommel.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/C SPONSORS/C4-Sport Vlaanderen.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/LOGISTIEKE SPONSORS/L1-LommelSK.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/LOGISTIEKE SPONSORS/L2-Vossemeren.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/LOGISTIEKE SPONSORS/L3-Krijmboer.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/LOGISTIEKE SPONSORS/L4-Kroon.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/LOGISTIEKE SPONSORS/L5-Hoeks.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/LOGISTIEKE SPONSORS/L6-Rademakers.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/LOGISTIEKE SPONSORS/L7-Decathlon.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/LOGISTIEKE SPONSORS/L8-Delhaize.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                    <div class="swiper-slide d-flex justify-content-center">
+                                        <div class="slider-item">
+                                            <img src="assets/img/pictures/sponsors/LOGISTIEKE SPONSORS/L9-Ixora.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div><!-- End testimonial item -->
+                                </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- ======= End partners Section ======= -->
 
             <!-- ======= Frequently Asked Questions Section ======= -->
-            <section id="faq" class="faq section-green">
-                <div class="container">
-                    <div class="section-title">
-                        <h2>Frequently Asked Questions</h2>
-                        <p>Heb je nog vragen? Kijk dan even hieronder! Heb je nog vragen? Aarzel dan niet om ons een mailtje te sturen.</p>
+            <section id="faq" class="section-white">
+                <div class="row h-100">
+                    <div class="col-12">
+                        <h1>FAQ</h1>
                     </div>
-
-                <div class="faq-list">
-                    <ul>
-                        <li data-aos="fade-up">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Waar kan ik terecht met mijn rugzak of ander materiaal?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Er is een bewaakte vestiaire voorzien. Hier kan u uw rugzak of sportzak veilig bewaren tot na de aankomst. <br><br>De vestiaire is geopend tot <b>18.00u</b>.
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="100">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Waar vind ik toiletten & kleedruimtes?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Er zijn voldoende toiletten aanwezig in de start en aankomstzone. <br>Kleed- en doucheruimtes zijn voorzien op wandelafstand van de aankomstzone, in de sporthal van XPlus. Volg hiervoor de pijlen.
-                            <br><br>De douches & kleedruimtes zijn geopend tot <b>18.00u</b>.
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="200">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Kan ik op voorhand mijn startnummer ophalen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Neen, wij voorzien geen afhaalmoment op voorhand. We verzorgen de afhaling op de dag zelf. <br> Kom zeker op tijd zodat je voldoende tijd hebt!
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="300">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Kan ik de dag zelf nog inschrijven?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Na de sluiting van de voorinschrijvingen kan je steeds online blijven inschrijven tot zelfs een uur voor de start. Let wel op, je betaalt het dagtarief. Je kan ook terecht aan de inschrijfstand bij de start vanaf <b>11.00u</b> tijdens de dag van het event.
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Waar moet ik aanmelden en wat moet ik meebrengen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Ingeschreven lopers kunnen zich aanmelden bij de voorziene stand in de startzone in Lommel-Centrum. Geef je naam of inschrijfcode en u ontvangt bij aanmelden een enveloppe met daarin jouw borstnummer en een persoonlijk nummer voor de vestiaire.                
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">Ik heb een medaille besteld, waar kan ik die afhalen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Op je borstnummer voorzien wij een icoon waarmee je bij aankomst je medaille in ontvangst kan nemen.            
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-7" class="collapsed">Ik kan bij het inschrijven voor de KIDSRUN niet kiezen voor een afstand. Waar moet ik dit doorgeven? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Voor de KIDSRUN kan je op de dag van de Sahara City Run zelf nog bepalen of je kind de 400m of 800m zal lopen. Er is geen extra meerkost!                
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-8" class="collapsed">Kan ik mijn kind begeleiden tijdens de KIDSRUN? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Er is geen begeleiding mogelijk door de ouders. Wij voorzien voldoende begeleiders om de kinderen veilig en gezond deze tour te laten lopen.              
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-9" class="collapsed">Kan ik nog van afstand wisselen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-9" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Dit is mogelijk door in te loggen op het inschrijvingsplatform van <b>Go Dare</b> tot 13 april 2025. Daarna kan dit enkel nog op de dag van de Sahara City Run. Ga hiervoor langs bij onze inschrijvingsstand.              
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-10" class="collapsed">Kan ik mijn inschrijving annuleren? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-10" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Ja dit kan, maar enkel op vertoon van een geldig doktersattest is het mogelijk om een terugbetaling te krijgen. Je kan hiervoor contact opnemen met ons via <a href="mailto:hello@saharacityrun.be">hello@saharacityrun.be</a>                
-                            </p>
-                        </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-11" class="collapsed">Kan ik mijn hond meenemen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-11" class="collapse" data-bs-parent=".faq-list">
-                            <p>
-                            Ook onze trouwe viervoeters zijn welkom op de Sahara City Run. Wij vragen enkel dat de begeleiders en hun honden achteraan starten. De honden dienen ook steeds aangelijnd te blijven.
-                            </p>
-                        </div>
-                        </li>
-
-                    </ul>
                 </div>
+                <div class="row h-100">
+                    <div class="col-12">
+                        <p>Heb je nog vragen? Kijk dan even hieronder! Staat het antwoord er niet tussen? Aarzel dan niet om ons een mailtje te sturen.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="faq-list">
+                        <ul>
+                            <li data-aos="fade-up">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Waar kan ik terecht met mijn rugzak of ander materiaal?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Er is een bewaakte vestiaire voorzien. Hier kan u uw rugzak of sportzak veilig bewaren tot na de aankomst. <br><br>De vestiaire is geopend tot <b>18.00u</b>.
+                                    </p>
+                                </div>
+                            </li>
 
-            </div>
-            </section><!-- End Frequently Asked Questions Section -->
+                            <li data-aos="fade-up" data-aos-delay="100">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Waar vind ik toiletten & kleedruimtes?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Er zijn voldoende toiletten aanwezig in de start en aankomstzone. <br>Kleed- en doucheruimtes zijn voorzien op wandelafstand van de aankomstzone, in de sporthal van XPlus. Volg hiervoor de pijlen.
+                                    <br><br>De douches & kleedruimtes zijn geopend tot <b>18.00u</b>.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-delay="200">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Kan ik op voorhand mijn startnummer ophalen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Neen, wij voorzien geen afhaalmoment op voorhand. We verzorgen de afhaling op de dag zelf. <br> Kom zeker op tijd zodat je voldoende tijd hebt!
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-delay="300">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Kan ik de dag zelf nog inschrijven?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Na de sluiting van de voorinschrijvingen kan je steeds online blijven inschrijven tot zelfs een uur voor de start. Let wel op, je betaalt het dagtarief. Je kan ook terecht aan de inschrijfstand bij de start vanaf <b>11.00u</b> tijdens de dag van het event.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-delay="400">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Waar moet ik aanmelden en wat moet ik meebrengen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Ingeschreven lopers kunnen zich aanmelden bij de voorziene stand in de startzone in Lommel-Centrum. Geef je naam of inschrijfcode en u ontvangt bij aanmelden een enveloppe met daarin jouw borstnummer en een persoonlijk nummer voor de vestiaire.                
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-delay="400">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">Ik heb een medaille besteld, waar kan ik die afhalen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Op je borstnummer voorzien wij een icoon waarmee je bij aankomst je medaille in ontvangst kan nemen.            
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-delay="400">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-7" class="collapsed">Ik kan bij het inschrijven voor de KIDSRUN niet kiezen voor een afstand. Waar moet ik dit doorgeven? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Voor de KIDSRUN kan je op de dag van de Sahara City Run zelf nog bepalen of je kind de 400m of 800m zal lopen. Er is geen extra meerkost!                
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-delay="400">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-8" class="collapsed">Kan ik mijn kind begeleiden tijdens de KIDSRUN? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Er is geen begeleiding mogelijk door de ouders. Wij voorzien voldoende begeleiders om de kinderen veilig en gezond deze tour te laten lopen.              
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-delay="400">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-9" class="collapsed">Kan ik nog van afstand wisselen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-9" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Dit is mogelijk door in te loggen op het inschrijvingsplatform van <b>Go Dare</b> tot 13 april 2025. Daarna kan dit enkel nog op de dag van de Sahara City Run. Ga hiervoor langs bij onze inschrijvingsstand.              
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-delay="400">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-10" class="collapsed">Kan ik mijn inschrijving annuleren? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-10" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Ja dit kan, maar enkel op vertoon van een geldig doktersattest is het mogelijk om een terugbetaling te krijgen. Je kan hiervoor contact opnemen met ons via <a href="mailto:hello@saharacityrun.be">hello@saharacityrun.be</a>                
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-delay="400">
+                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-11" class="collapsed">Kan ik mijn hond meenemen? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                <div id="faq-list-11" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                    Ook onze trouwe viervoeters zijn welkom op de Sahara City Run. Wij vragen enkel dat de begeleiders en hun honden achteraan starten. De honden dienen ook steeds aangelijnd te blijven.
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- End Frequently Asked Questions Section -->
         </main>
 
         <!-- ======= Footer ======= -->
@@ -435,13 +722,14 @@
             </div>
         </footer>
         
+        <!-- Link Bootstrap CDN Templates-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/text_punch.js"></script>
         <script src="assets/js/countdown.js"></script>
-
-        <!-- Link Bootstrap CDN Templates-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     </body>
 </html>

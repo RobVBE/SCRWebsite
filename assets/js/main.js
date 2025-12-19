@@ -186,8 +186,8 @@
 
   /**
    * Testimonials slider
-   
-  new Swiper('.testimonials-slider', {
+   */
+  const swiper = new Swiper('.swiper', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -202,16 +202,16 @@
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 20
       },
 
-      1200: {
-        slidesPerView: 3,
+      992: {
+        slidesPerView: 4,
         spaceBetween: 20
       }
     }
-  });*/
+  });
 
   /**
    * Porfolio isotope and filter
