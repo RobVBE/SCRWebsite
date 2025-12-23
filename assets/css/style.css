@@ -1072,7 +1072,7 @@ section {
 #partners h1,
 #partners p {
   color: var(--scr-colour-white);
-  text-align: end;
+  text-align: center;
 }
 
 /*-- General: Custom Classes --*/
@@ -1121,10 +1121,7 @@ section {
 /*-- General: Custom Classes --*/
 #faq .faq-list {
   padding: 0 100px;
-}
-
-#faq .faq-list {
-  padding: 0 100px;
+  margin-top: 20px;
 }
 
 #faq .faq-list ul {
@@ -1138,16 +1135,18 @@ section {
 
 #faq .faq-list li {
   padding: 20px;
-  background: #261E0F;
-  border-radius: 4px;
+  background: var(--scr-colour-lightgreen);
+  border-radius: 15px;
+  border-color: var(--scr-colour-white);
+  border-style: solid;
+  border-width: 5px;
   position: relative;
 }
 
 #faq .faq-list a {
   display: block;
   position: relative;
-  color: rgba(250,175,8,1);
-  font-family: "Poppins", sans-serif;
+  color: var(--scr-colour-white);
   font-size: 0.89rem;
   line-height: 24px;
   font-weight: 500;
@@ -1161,7 +1160,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: rgba(250,175,8,255);
+  color: var(--scr-colour-white);
 }
 
 #faq .faq-list .icon-show,
@@ -1175,7 +1174,7 @@ section {
 #faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
-  color: #fff;
+  color: var(--scr-colour-white);
 }
 
 #faq .faq-list .icon-show {
@@ -1188,7 +1187,7 @@ section {
 }
 
 #faq .faq-list a.collapsed:hover {
-  color: rgba(250,175,8,255);
+  color: var(--scr-colour-green);
 }
 
 #faq .faq-list a.collapsed .icon-show {
@@ -1229,15 +1228,8 @@ section {
   display: block;
 }
 
-#footer h2::before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 60px;
-  height: 5px;
-  background: var(--scr-background-colour-white);
-  margin-bottom: 5px;
-  bottom: 0;
+#footer a {
+  color: var(--scr-colour-white);
 }
 
 #footer h2 {
@@ -1252,7 +1244,7 @@ section {
 #footer h3 {
   margin: 0;
   font-weight: 700;
-  color: #fff;
+  color: var(--scr-colour-white);
   white-space: nowrap;
   letter-spacing: 0.03em;
   font-size: clamp(20px, 1.75rem, 30px);
@@ -1287,7 +1279,7 @@ section {
   backdrop-filter: blur(6px);
   border-radius: 15px;
   position: relative;
-  border:5px solid rgba(255,255,255);
+  border:5px solid var(--scr-colour-white);
   overflow: hidden;
   width:max-content;
   align-items:center; 
@@ -1302,14 +1294,15 @@ section {
   background: rgba(28,30,15,1);
   -webkit-backdrop-filter: blur(0px);
   backdrop-filter: blur(0px);
+  transform: translateY(5px);
 }
 
 /*-- General: Grid Classes--*/
 #footer .container {
-  background: var(--scr-background-colour-darkbrown);
-  color: var(--scr-background-colour-white);
+  background: var(--scr-colour-lightgreen);
+  color: var(--scr-colour-white);
   max-width: 100%;
-  margin: 0;
+  margin: 0px;
 }
 
 #footer .col-12,
