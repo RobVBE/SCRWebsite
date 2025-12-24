@@ -586,6 +586,97 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Hero Section - Subpages
+--------------------------------------------------------------*/
+/*-- General --*/
+#hero-sub {
+  width: 100%;
+  height: 60vh;
+  min-height: 60vh;
+  min-height: 60dvh;
+  min-height: 60svh;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+}
+
+/*-- General: Default Classes --*/
+#hero-sub h1 {
+  margin: 0;
+  font-weight: 700;
+  color: var(--scr-colour-white);
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  font-size: clamp(30px, 9vw, 40px);
+  line-height: 1.0; 
+}
+
+@media (min-width: 992px) {
+  #hero-sub h1 {
+    font-size: clamp(50px, 4vw, 70px);
+  }
+}
+
+/*-- General: Custom Classes --*/
+#hero-sub .background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform-origin: center center;
+  animation: key-background-lg 0.2s linear;
+}
+
+@media (max-width: 576px) {
+  #hero-sub .background{ animation-name: key-background-sm; }
+}
+
+@media (orientation: portrait) {
+  #hero-sub .background { object-position: 55% 40%; }
+}
+
+#hero-sub .tag-fill {
+  display: inline-block;
+  vertical-align: 0.10em;
+  line-height: 0;
+}
+
+#hero-sub .tag-fill-svg-h1 {
+  display: inline-block;
+  height: clamp(30px, 14vw, 65px);
+  width: auto;
+  filter: drop-shadow(0 6px 16px rgba(0,0,0,.25));
+}
+
+@media (min-width: 992px) {
+  #hero-sub .tag-fill-svg-h1 {
+    height: clamp(80px, 6vw, 100px);
+    width: auto;
+  }
+}
+
+/*-- General: Grid Classes--*/
+#hero-sub .container {
+  max-width: 100%;
+  margin: 0;
+  padding-top: 45px;
+}
+
+#hero-sub .img-logo {
+  display: block;
+  width: auto;
+  max-height: 60%;
+  opacity: 0;
+  animation: key-fadein 0.5s ease-in forwards;
+  visibility: visible;
+}
+
+/*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
 /*-- General --*/
@@ -1208,6 +1299,258 @@ section {
 #faq .container {
   max-width: 100%;
   margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Pictures: pictures Section
+--------------------------------------------------------------*/
+/*-- General --*/
+#pictures {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/*-- General: Default Classes --*/
+#pictures h1 {
+  font-size: 7vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--scr-colour-lightgreen);
+}
+
+#pictures h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0px !important;
+  text-transform: uppercase;
+  text-align: start;
+  color: var(--scr-colour-white);
+}
+
+/*-- General: Custom Classes --*/
+#pictures .pictures-head{
+  position: relative;
+  z-index: 100;
+  text-align: center;
+}
+
+#pictures .date-list ul {
+  padding: 0;
+  list-style: none;
+  width: 40cqw;
+}
+
+#pictures .date-list li+li {
+  margin-top: 15px;
+}
+
+#pictures .date-list li {
+  padding: 15px;
+  background: var(--scr-colour-brown);
+  border-radius: 15px;
+  border-color: var(--scr-colour-white);
+  border-style: solid;
+  border-width: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--scr-colour-white);
+}
+
+#pictures .date-list li:hover {
+   transform: translateY(5px);
+}
+
+#pictures .credits {
+  font-size: 15px;
+  margin-top: 5px;
+  font-style: italic;
+  color: var(--scr-colour-white);
+}
+
+#pictures .box-album1,
+#pictures .box-album2,
+#pictures .box-album3,
+#pictures .box-album4,
+#pictures .box-album5,
+#pictures .box-album6,
+#pictures .box-album7,
+#pictures .box-album8,
+#pictures .box-album9,
+#pictures .box-album10,
+#pictures .box-album11,
+#pictures .box-album12,
+#pictures .box-album13
+ {
+  padding-top: 20vh;
+  margin-bottom: 20px;
+  height: 40vh;
+  width: 60vw;
+  margin-right: 15px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+#pictures .box-album1 {
+  background: url("https://live.staticflickr.com/65535/54468527485_8ea3c8b1fb_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album2 {
+  background: url("https://live.staticflickr.com/65535/54468600350_c936a84b6e_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album3 {
+  background: url("https://live.staticflickr.com/65535/54468453899_fdd4d27038_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album4 {
+  background: url("https://live.staticflickr.com/65535/54468516244_c6c6f08459_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album5 {
+  background: url("https://live.staticflickr.com/65535/54468997125_0132b9322c_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album6 {
+  background: url("https://live.staticflickr.com/65535/54468700426_27514e0262_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album7 {
+  background: url("https://live.staticflickr.com/65535/54469428459_f017d601d6_h.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album8 {
+  background: url("https://live.staticflickr.com/65535/54469812274_2374405862_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album9 {
+  background: url("https://live.staticflickr.com/65535/54547112730_1f28ab0cdd_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album10 {
+  background: url("https://live.staticflickr.com/65535/54467822141_b2a655f949_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album11 {
+  background: url("https://live.staticflickr.com/65535/54468198440_95a2c55b11_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album12 {
+  background: url("https://live.staticflickr.com/65535/54468068454_5f0abb241a_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album13 {
+  background: url("https://live.staticflickr.com/65535/54468053666_555deae656_c.jpg") top center;
+  background-size: cover;
+}
+
+#pictures .box-album1::before,
+#pictures .box-album2::before,
+#pictures .box-album3::before,
+#pictures .box-album4::before,
+#pictures .box-album5::before,
+#pictures .box-album6::before,
+#pictures .box-album7::before,
+#pictures .box-album8::before,
+#pictures .box-album9::before,
+#pictures .box-album10::before,
+#pictures .box-album11::before,
+#pictures .box-album12::before,
+#pictures .box-album13::before {
+  content: "";
+  background-color: var(--scr-colour-brown);
+  opacity: 0.6;
+  position: absolute;
+  inset: 0;
+  z-index: 1001;
+  margin-top: 30vh;
+}
+
+#pictures .box-album1:hover,
+#pictures .box-album2:hover,
+#pictures .box-album3:hover,
+#pictures .box-album4:hover,
+#pictures .box-album5:hover,
+#pictures .box-album6:hover,
+#pictures .box-album7:hover,
+#pictures .box-album8:hover,
+#pictures .box-album9:hover,
+#pictures .box-album10:hover,
+#pictures .box-album11:hover,
+#pictures .box-album12:hover,
+#pictures .box-album13:hover {
+  transform: scale(1.03);
+}
+
+#pictures .box-album1:hover::before,
+#pictures .box-album2:hover::before,
+#pictures .box-album3:hover::before,
+#pictures .box-album4:hover::before,
+#pictures .box-album5:hover::before,
+#pictures .box-album6:hover::before,
+#pictures .box-album7:hover::before,
+#pictures .box-album8:hover::before,
+#pictures .box-album9:hover::before,
+#pictures .box-album10:hover::before,
+#pictures .box-album11:hover::before,
+#pictures .box-album12:hover::before,
+#pictures .box-album13:hover::before {
+  margin-top: 0vh;
+}
+
+#pictures .box .img-fluid {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+@media (min-width: 992px) {
+  #pictures .date-list ul {
+    width: 20cqw;
+  }
+
+  #pictures .box-album1,
+  #pictures .box-album2,
+  #pictures .box-album3,
+  #pictures .box-album4,
+  #pictures .box-album5,
+  #pictures .box-album6,
+  #pictures .box-album7,
+  #pictures .box-album8,
+  #pictures .box-album9,
+  #pictures .box-album10,
+  #pictures .box-album11,
+  #pictures .box-album12,
+  #pictures .box-album13 {
+    width: 25vw;
+  }
+}
+
+
+/*-- General: Grid Classes--*/
+#pictures .container {
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------
