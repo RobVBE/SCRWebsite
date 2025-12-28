@@ -195,10 +195,10 @@ section {
 }
 
 #header .offcanvas-body li a {
-  font-weight: 700;
+  font-weight: 900;
   color: var(--scr-colour-white);
   letter-spacing: 0.03em;
-  font-size: clamp(20px, 6vw, 40px);
+  font-size: clamp(20px, 5vw, 40px);
   line-height: 1.0; 
   text-transform: uppercase;
 }
@@ -229,7 +229,7 @@ section {
   }
 
   #header .offcanvas-body li a {
-    font-weight: 400;
+    font-weight: 900;
     font-size: 20px;
   }
 
@@ -250,19 +250,30 @@ section {
   }
 }
 
+#header .dropdown-menu {
+  background: var(--scr-colour-green);
+  text-align: center;
+  border-radius: 15px;
+}
+
 #header .dropdown-menu li a {
   font-weight: 700;
   color: var(--scr-colour-white);
   letter-spacing: 0.03em;
-  font-size: clamp(25px, 7vw, 40px);
+  font-size: 18px;
   line-height: 1.0; 
   text-transform: uppercase;
 }
 
 @media (min-width: 992px) {
+  #header .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
   #header .dropdown-menu li a {
-    font-weight: 600;
-    font-size: clamp(25px, 1.6rem, 35px);
+    font-weight: 800;
+    font-size: 18px;
   }
 }
 
@@ -803,6 +814,40 @@ section {
     letter-spacing: 1px;
 }
 
+#info .button {
+  align-self: center;
+  display: inline-flex;
+  padding: 0.5rem 2rem;
+  background: var(--scr-colour-brown);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  position: relative;
+  border:5px solid var(--scr-colour-white);
+  overflow: hidden;
+  width:max-content;
+  align-items:center; 
+  gap:.6rem; 
+  height: clamp(45px, 10%, 60px);
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+
+#info .button:hover {
+  background: rgba(28,30,15,1);
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  transform: translateY(5px);
+}
+
+#practical .button h3 {
+  margin-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+} 
+
 @media (min-width: 992px) {
   #info .d-row {
     flex-direction: row;
@@ -965,6 +1010,72 @@ section {
   padding: 10%;
   justify-content: flex-end;
   pointer-events: none;
+}
+
+#parcours .distance-box-price {
+  position: absolute;
+  inset: 0;
+  z-index: 203;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10%;
+  justify-content: flex-start;
+  pointer-events: none;
+}
+
+#parcours .distance-box-price .circle-kidsrun {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--scr-colour-kidsrun);
+  border:1px solid var(--scr-colour-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#parcours .distance-box-price .circle-6k {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--scr-colour-6k);
+  border:1px solid var(--scr-colour-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#parcours .distance-box-price .circle-10k {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--scr-colour-10k);
+  border:1px solid var(--scr-colour-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#parcours .distance-box-price .circle-16k {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--scr-colour-16k);
+  border:1px solid var(--scr-colour-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#parcours .distance-box-price .text {
+  /* Center the text within the circle */
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--scr-colour-white);
+  /* Rotate *only* the text */
+  transform: rotate(15deg);
+  font-weight: 600;
 }
 
 #parcours .distance-box-text .text{
@@ -1550,6 +1661,280 @@ section {
 
 /*-- General: Grid Classes--*/
 #pictures .container {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+#Contact Section
+--------------------------------------------------------------*/
+/*-- General --*/
+#contact {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/*-- General: Default Classes --*/
+#contact h1 {
+  font-size: 7vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--scr-colour-lightgreen);
+}
+
+/*-- General: Custom Classes --*/
+
+/*-- General: Grid Classes--*/
+#contact .container {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+#practical Section
+--------------------------------------------------------------*/
+/*-- General --*/
+#practical {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/*-- General: Default Classes --*/
+#practical h1 {
+  font-size: 12vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: start;
+  color: var(--scr-colour-lightgreen);
+}
+
+#practical h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: start;
+  color: var(--scr-colour-white);
+}
+
+#practical h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--scr-colour-white);
+  margin-top: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#practical p {
+  color: var(--scr-colour-white);
+}
+
+@media (min-width: 992px) {
+  #practical h1 {
+    font-size: 7vw;
+  }
+}
+
+/*-- General: Custom Classes --*/
+#practical .box {
+  padding-top: 20vh;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  margin-right: 15px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--scr-colour-green);
+  inset: 0;
+  position: relative;
+  z-index: 1000;
+}
+
+#practical .box-distance {
+  margin: 0;
+}
+
+#practical .head {
+  position: relative;
+  inset: 0;
+  z-index: 1001;
+}
+
+#practical .img-distance {
+  max-height: 70%;
+  width: auto;
+  display: block;
+  justify-self: center;
+}
+
+#practical .button {
+  align-self: center;
+  display: inline-flex;
+  padding: 0.5rem 2rem;
+  background: rgba(28,30,15,0.06);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  position: relative;
+  border:5px solid var(--scr-colour-white);
+  overflow: hidden;
+  width:max-content;
+  align-items:center; 
+  gap:.6rem; 
+  height: clamp(45px, 10%, 60px);
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+
+#practical .button:hover {
+  background: rgba(28,30,15,1);
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  transform: translateY(5px);
+}
+
+#practical .button h3 {
+  margin-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}    
+
+#practical .drop-list {
+  padding: 0;
+  margin-top: 20px;
+}
+
+#practical .drop-list ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0.89rem;
+}
+
+#practical .drop-list li+li {
+  margin-top: 15px;
+}
+
+#practical .drop-list li {
+  padding: 5px 20px;
+  background: var(--scr-colour-lightgreen);
+  border-radius: 15px;
+  border-color: var(--scr-colour-white);
+  border-style: solid;
+  border-width: 0px;
+  position: relative;
+  font-size: 0.89rem;
+}
+
+#practical .drop-list a {
+  display: block;
+  position: relative;
+  color: var(--scr-colour-white);
+  font-size: 0.89rem;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+#practical .drop-list i {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: start;
+  color: var(--scr-colour-white);
+}
+
+#practical .drop-list .icon-show,
+#practical .drop-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#practical .drop-list p {
+  margin-bottom: 0;
+  padding: 10px 25px 10px 25px;
+  color: var(--scr-colour-white);
+}
+
+#practical .drop-list .icon-show {
+  display: none;
+}
+
+#practical .drop-list a.collapsed {
+  color: #fff;
+  transition: 0.3s;
+}
+
+#practical .drop-list a.collapsed:hover {
+  color: var(--scr-colour-green);
+}
+
+#practical .drop-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+#practical .drop-list a.collapsed .icon-close {
+  display: none;
+}
+
+#practical .normal-list {
+  list-style: circle !important;
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: var(--scr-colour-white);
+}
+
+#practical .normal-list li {
+  padding: 0;
+}
+
+#practical .normal-list li+li {
+  padding: 0;
+  margin-top: 0px !important;
+}
+
+@media (max-width: 992px) {
+  #practical .drop-list {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #practical .box {
+    margin-top: -50px;
+  }
+
+  #practical .img-distance {
+    margin-top: 15px;
+    max-height: 50%;
+    text-align: center;
+  }
+}
+
+/*-- General: Grid Classes--*/
+#practical .container {
   max-width: 100%;
 }
 
