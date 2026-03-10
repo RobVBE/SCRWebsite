@@ -893,13 +893,13 @@ section {
 
 #sfeer .slider-wrapper{
   position: relative;
-  z-index: 101;
+  z-index: 100;
   margin-top: -35px;
 }
 
 #sfeer .slider-text{
   position: relative;
-  z-index: 100;
+  z-index: 101;
 }
 
 /*-- General: Grid Classes--*/
@@ -996,7 +996,7 @@ section {
 
 #parcours .distance-box-container {
   position: relative;
-  height: 30ch !important;
+  height: 45ch !important;
   padding: 0px;
 }
 
@@ -1090,7 +1090,7 @@ section {
   border:1px solid var(--scr-colour-white);
   border-radius: 15px;
   padding: 0.1rem 1rem;
-  width: 50%;
+  width: 100%;
   font-weight: 900;
   margin-bottom: 15px;
   text-align: center;
@@ -1103,7 +1103,7 @@ section {
   border:1px solid var(--scr-colour-white);
   border-radius: 15px;
   padding: 0.1rem 1rem;
-  width: 50%;
+  width: 100%;
   font-weight: 900;
   margin-bottom: 15px;
   text-align: center;
@@ -1116,7 +1116,7 @@ section {
   border:1px solid var(--scr-colour-white);
   border-radius: 15px;
   padding: 0.1rem 1rem;
-  width: 50%;
+  width: 100%;
   font-weight: 900;
   margin-bottom: 15px;
   text-align: center;
@@ -1129,7 +1129,7 @@ section {
   border:1px solid var(--scr-colour-white);
   border-radius: 15px;
   padding: 0.1rem 1rem;
-  width: 50%;
+  width: 100%;
   font-weight: 900;
   margin-bottom: 15px;
   text-align: center;
