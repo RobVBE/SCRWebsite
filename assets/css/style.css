@@ -1501,6 +1501,7 @@ section {
 #pictures .box-album12,
 #pictures .box-album13
  {
+  position: relative;
   padding-top: 20vh;
   margin-bottom: 20px;
   height: 40vh;
@@ -1512,53 +1513,85 @@ section {
   z-index: 1000;
 }
 
+
+#pictures .box-album1 h2,
+#pictures .box-album1 .credits,
+#pictures .box-album2 h2,
+#pictures .box-album2 .credits,
+#pictures .box-album3 h2,
+#pictures .box-album3 .credits,
+#pictures .box-album4 h2,
+#pictures .box-album4 .credits,
+#pictures .box-album5 h2,
+#pictures .box-album5 .credits,
+#pictures .box-album6 h2,
+#pictures .box-album6 .credits,
+#pictures .box-album7 h2,
+#pictures .box-album7 .credits,
+#pictures .box-album8 h2,
+#pictures .box-album8 .credits,
+#pictures .box-album9 h2,
+#pictures .box-album9 .credits,
+#pictures .box-album10 h2,
+#pictures .box-album10 .credits,
+#pictures .box-album11 h2,
+#pictures .box-album11 .credits,
+#pictures .box-album12 h2,
+#pictures .box-album12 .credits,
+#pictures .box-album13 h2,
+#pictures .box-album13 .credits{
+  position: relative;
+  z-index: 1002;             /* text layer ABOVE overlay */
+}
+
+
 #pictures .box-album1 {
-  background: url("https://live.staticflickr.com/65535/54468527485_8ea3c8b1fb_c.jpg") top center;
+  background: url("https://www.saharacityrun.be/assets/img/pictures/SCR 296.jpg") top center;
   background-size: cover;
 }
 
 #pictures .box-album2 {
-  background: url("https://live.staticflickr.com/65535/54468600350_c936a84b6e_c.jpg") top center;
+  background: url("https://lh3.googleusercontent.com/pw/AP1GczMKcoIqV7eQqjm8zHT7Dv9R1gqowJLDO5oR-vpkgHjjWhJxs_gBIQOQU_D0qxl_g09Qecf5L0pJW1K2Xv01k4--eVbzFvqw8p5a8KfOokCzH7w_R24wKd6LRJ7bwJ-LfVtUcfqdTePQU0kljVRpS7GC=w1371-h914-s-no?authuser=0") top center;
   background-size: cover;
 }
 
 #pictures .box-album3 {
-  background: url("https://live.staticflickr.com/65535/54468453899_fdd4d27038_c.jpg") top center;
+  background: url("https://lh3.googleusercontent.com/pw/AP1GczO-X9vj_d59aHsQTP-Vkr9KBzphogyy2nTfa6pO5-pp-x71Vw91PytpDq8FX0jdj7TFI0mI6vioFd7jvJegklZnhkLMTddgmAWdyS5O951EoHtWodvgXlsDpx10gFhKpUhXnOYb6XpZfgSSPdtbnPFP=w1369-h914-s-no?authuser=0") top center;
   background-size: cover;
 }
 
 #pictures .box-album4 {
-  background: url("https://live.staticflickr.com/65535/54468516244_c6c6f08459_c.jpg") top center;
+  background: url("https://lh3.googleusercontent.com/pw/AP1GczPKM0YkAxQWvDNOI9LuBmG8LGF02OfPlx1hIuxDNuHQJxyGr3f7TYh_Br14hAakIKAcKVFl8bNZEy6JT3Uj1_GNyMrDmm-yMYWz1BFxpzOaiejli49PrpUNcfDdjKrjhaOERfyiuPmHuAAmC84y_-GD=w1371-h914-s-no?authuser=0") top center;
   background-size: cover;
 }
 
 #pictures .box-album5 {
-  background: url("https://live.staticflickr.com/65535/54468997125_0132b9322c_c.jpg") top center;
+  background: url("https://lh3.googleusercontent.com/pw/AP1GczPMOSoXEnxHu6YmEHlB5_Pczl1BspOFW5cKrGrBGIpuugTz8y6VmG_sz5ENAhyATiNeOgVP967Nwr3xQMUzYxg-_DmAeYbjwZSLwenikIlyi7U9orJAGhm_QoUGvtcNl5b-E7g8n1K_reHUrqfHnXAw=w1371-h914-s-no?authuser=0") top center;
   background-size: cover;
 }
 
 #pictures .box-album6 {
-  background: url("https://live.staticflickr.com/65535/54468700426_27514e0262_c.jpg") top center;
+  background: url("https://lh3.googleusercontent.com/pw/AP1GczM_F4zQKhVFQYmMYqQUtVBt04PirsbuJHCXc7OXUAJgPwV189YPyfXOZ97aVXVXoTCNZImDB1WBK9qYjsIFdQ384ufAW1WzRM9kwfVbbJ7fvJxR7i_j1h5JbHrVMixoE2n_IL_w6tydcDiyKMg_VSZk=w1371-h914-s-no?authuser=0") top center;
   background-size: cover;
 }
 
 #pictures .box-album7 {
-  background: url("https://live.staticflickr.com/65535/54469428459_f017d601d6_h.jpg") top center;
+  background: url("https://lh3.googleusercontent.com/pw/AP1GczM5eHkaBgWv0kWzs3-KETpQoh1z1TjkLQN2M6EhOJ4eTVVmu65J97TCov4kHYmEwFIIiU5SW1dm23B7E2S_5w1Es2h8HV1IpLUWB7IVBZtIBNgp1Z4GiFnLk9Ro9kbm4Mzp8j25UIxkHEVxgD9rXCd_=w1371-h914-s-no?authuser=0") top center;
   background-size: cover;
 }
 
 #pictures .box-album8 {
-  background: url("https://live.staticflickr.com/65535/54469812274_2374405862_c.jpg") top center;
+  background: url("https://live.staticflickr.com/65535/55221140803_e05299b61a_h.jpg") top center;
   background-size: cover;
 }
 
 #pictures .box-album9 {
-  background: url("https://live.staticflickr.com/65535/54547112730_1f28ab0cdd_c.jpg") top center;
+  background: url("https://live.staticflickr.com/65535/55217752700_61ea28b842_h.jpg") top center;
   background-size: cover;
 }
 
 #pictures .box-album10 {
-  background: url("https://live.staticflickr.com/65535/54467822141_b2a655f949_c.jpg") top center;
+  background: url("https://live.staticflickr.com/65535/55217433316_7fd36b8bda_z.jpg") top center;
   background-size: cover;
 }
 
@@ -1596,7 +1629,8 @@ section {
   position: absolute;
   inset: 0;
   z-index: 1001;
-  margin-top: 30vh;
+  height: 15vh;
+  pointer-events: none;
 }
 
 #pictures .box-album1:hover,
@@ -1628,7 +1662,7 @@ section {
 #pictures .box-album11:hover::before,
 #pictures .box-album12:hover::before,
 #pictures .box-album13:hover::before {
-  margin-top: 0vh;
+  height: 100vh;
 }
 
 #pictures .box .img-fluid {
