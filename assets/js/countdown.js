@@ -1,6 +1,6 @@
 function updateCountdown() {
     // Set the event date & get current date
-    const eventDate = new Date('April 19, 2026 12:00:00 UTC').getTime();
+    const eventDate = new Date('April 11, 2027 12:00:00 UTC').getTime();
     const now = new Date();
     const diff = eventDate - now;
     
